@@ -36,9 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\scoreCont.cs" />
      <Compile Include="Assets\carCont.cs" />
      <Compile Include="Assets\textWriter.cs" />
-     <Compile Include="Assets\scoreCont.cs" />
+     <Compile Include="Assets\finish.cs" />
+     <Compile Include="Assets\VarHolder.cs" />
+     <Compile Include="Assets\varGiver.cs" />
      <None Include="Assets\Resources\score.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

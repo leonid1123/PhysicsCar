@@ -5,20 +5,22 @@ using UnityEngine.UI;
 
 public class textWriter : MonoBehaviour
 {
-    int[] score={1,2,3,4};
+
     Text text;
     void Start()
     {
-        text = GameObject.Find("Text").GetComponent<Text>();
-        for (var i = 0; i < score.Length; i++)
-        {
-            text.text += (score[i].ToString()+System.Environment.NewLine);
-        }
+        WriteText();
     }
 
     
-    void Update()
+    void WriteText()
     {
+        text = GameObject.Find("Text").GetComponent<Text>();
+        scoreCont scoreController = GameObject.Find("GameObject").GetComponent<scoreCont>();
+        for (var i = 0; i < scoreController.scores.Length; i++)
+        {
+            text.text += (scoreController.scores[i].ToString()+" "+scoreController.names[i] +System.Environment.NewLine);
+        }
         
     }
 }

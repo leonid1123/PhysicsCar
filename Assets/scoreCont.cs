@@ -31,13 +31,12 @@ public class scoreCont : MonoBehaviour
         
     }
 
-    //[MenuItem("Tools/Write file")]
     static void WriteString(string str)
     {
         string path = "Assets/Resources/score.txt";
 
         //Write some text to the test.txt file
-        StreamWriter writer = new StreamWriter(path, true);
+        StreamWriter writer = new StreamWriter(path, false);
         writer.WriteLine(str);
         writer.Close();
     }
